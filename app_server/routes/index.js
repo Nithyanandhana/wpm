@@ -8,17 +8,15 @@ router.get('/', function(req, res, next) {
 
 module.exports = router;
 */
-// const express = require('express');
-// const router = express.Router();
-// const ctrlMain = require('../controllers/main');
-// /* GET homepage. */
-// router.get('/', ctrlMain.index);
-// module.exports = router;
-
+/*const express = require('express');
+const router = express.Router();
+const ctrlMain = require('../controllers/main');
+/* GET homepage. 
+router.get('/', ctrlMain.index);
+module.exports = router; */
 const express = require('express');
 const router = express.Router();
-const ctrlLocations =
-require('../controllers/locations');
+const ctrlLocations = require('../controllers/locations');
 const ctrlOthers = require('../controllers/others');
 /* Locations pages */
 router.get('/', ctrlLocations.homelist);

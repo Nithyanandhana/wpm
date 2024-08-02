@@ -3,8 +3,9 @@ extends layout
 block content
   .row.banner
     .col-12
-      h1 Loc8r
-      small &nbsp;Find places to work with wifi near you!
+      h1= pageHeader.title
+        small
+        &nbsp;#{pageHeader.strapline}
 
   // Listing 4.6 Complete template for app_server/views/locations-list.pug
   // Name of the listing and a link to the location
